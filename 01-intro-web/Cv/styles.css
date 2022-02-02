@@ -1,0 +1,17 @@
+p {
+  color: blue;
+  font-size: 20px;
+  font-weight: bold;
+  /* text-align: center; */
+}
+/*clase*/
+.lista {
+  color: blueviolet;
+}
+/*id*/
+#acercademi {
+  background-color: red;
+}
+#parrafoColor {
+  color: orange;
+}

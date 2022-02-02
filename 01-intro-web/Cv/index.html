@@ -1,39 +1,77 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
     <title>Mi pagina personal</title>
-</head>
-<body>
-    <img src="https://pluspng.com/img-png/png-user-icon-icons-logos-emojis-users-2400.png" alt="imagen usuario" width="100px">
-    <h1>Carlos Burgueño</h1>
+    <!--
+    <style type="text/css">
+      p {
+        color: blue;
+        font-size: 20px;
+        font-weight: bold;
+        text-align: center;
+      }
+      h3 {
+        color: red;
+      }
+    </style>
+    -->
+  </head>
+  <body>
+    <img
+      src="https://pluspng.com/img-png/png-user-icon-icons-logos-emojis-users-2400.png"
+      alt="imagen usuario"
+      width="100px"
+    />
+    <!--<h1
+      style="
+        text-transform: uppercase;
+        color: rgb(174, 0, 255);
+        text-align: right;
+      "
+    >
+      carlos burgueño
+    </h1>
+    -->
+    <h1 class="lista">Carlos Burgueño</h1>
     <nav>
-        <!-- MENU de navegacion  -->
-        <ul>
-            <li>
-                <a href="#">Incio</a>
-            </li>
-            <li>Acerca de mi</li>
-            <li>Skills</li>
-            <li>Hobbys</li>
-        </ul>
+      <!-- MENU de navegacion  -->
+      <ul class="lista">
+        <li>
+          <a href="#">Incio</a>
+        </li>
+        <li>Acerca de mi</li>
+        <li>Skills</li>
+        <li>Hobbys</li>
+      </ul>
     </nav>
     <section id="acercademi">
-        <h3>Acerca de mi</h3>
+      <h3>Acerca de mi</h3>
 
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis vero recusandae laboriosam similique cupiditate excepturi accusantium, quasi sed aliquid error explicabo eum magnam repellendus nemo obcaecati ut, expedita reiciendis quisquam?</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit itaque fugit eveniet hic reiciendis numquam incidunt? Iste, iusto, aliquam quisquam architecto dolorum ratione repellat debitis nobis animi enim nesciunt voluptatibus!</p>
+      <p class="lista">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis vero
+        recusandae laboriosam similique cupiditate excepturi accusantium, quasi
+        sed aliquid error explicabo eum magnam repellendus nemo obcaecati ut,
+        expedita reiciendis quisquam?
+      </p>
+      <p id="parrafoColor">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit itaque
+        fugit eveniet hic reiciendis numquam incidunt? Iste, iusto, aliquam
+        quisquam architecto dolorum ratione repellat debitis nobis animi enim
+        nesciunt voluptatibus!
+      </p>
     </section>
     <section id="skills">
-        <ol>
-            <li>Trabajo equipo</li>
-            <li>Experto en HTML</li>
-        </ol>
+      <ol class="lista">
+        <li>Trabajo equipo</li>
+        <li>Experto en HTML</li>
+      </ol>
     </section>
     <footer>
-        <h6>Todos los derechos reservados Devf 2022</h6>
+      <h6>Todos los derechos reservados Devf 2022</h6>
     </footer>
-</body>
+  </body>
 </html>

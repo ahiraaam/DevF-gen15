@@ -1,0 +1,36 @@
+body {
+  color: green;
+}
+body .class .other-class {
+  background-color: bisque;
+}
+.class p {
+  background-color: aqua;
+  font-weight: bold;
+}
+.other-class p {
+  background-color: violet;
+  font-size: 20px;
+}
+#botonUno {
+  background-color: rgb(146, 99, 190);
+}
+#botonUno:hover {
+  background-color: rgb(58, 3, 110);
+  color: white;
+}
+.titulo-principal {
+  color: red;
+}
+#especial {
+  color: darkmagenta !important;
+}
+#especial {
+  color: tomato;
+}
+h1 {
+  color: blue;
+}
+h1 {
+  color: darkgoldenrod;
+}

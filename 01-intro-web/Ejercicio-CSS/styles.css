@@ -1,5 +1,6 @@
 body {
   color: green;
+  font-family: "Syne Tactile", sans-serif;
 }
 body .class .other-class {
   background-color: bisque;
@@ -27,10 +28,14 @@ body .class .other-class {
 }
 #especial {
   color: tomato;
+  text-decoration: blink;
 }
 h1 {
   color: blue;
 }
 h1 {
   color: darkgoldenrod;
+}
+ul {
+  list-style: none;
 }

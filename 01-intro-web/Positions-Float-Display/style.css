@@ -1,0 +1,75 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+#content-box {
+  width: 200px;
+  height: 200px;
+  background-color: orange;
+  box-sizing: content-box;
+  padding: 10px;
+  border: 5px solid black;
+}
+#border-box {
+  width: 200px;
+  height: 200px;
+  background-color: blueviolet;
+  box-sizing: border-box;
+  padding: 10px;
+  border: 5px solid black;
+}
+div {
+  width: 200px;
+  height: 200px;
+  text-align: center;
+}
+section {
+  margin: 10px;
+  border: 2px solid black;
+}
+.relative {
+  background-color: red;
+  position: relative;
+  top: 100px;
+  left: 100px;
+  z-index: 1000;
+}
+.absolute {
+  background-color: yellow;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+.posiciones {
+  /*Si quito el relative entonces el div absolute tomará en cuenta al body*/
+  position: relative;
+}
+.fixed {
+  background-color: green;
+  width: 50px;
+  height: 50px;
+  position: fixed;
+  bottom: 20px;
+  right: 50px;
+}
+.div-sticky {
+  background-color: pink;
+  height: 400px;
+  overflow: scroll;
+}
+.sticky {
+  background-color: chartreuse;
+  width: 50px;
+  height: 50px;
+}
+.display {
+  width: 100px;
+  background-color: grey;
+  display: inline;
+}
+.display-inline-block {
+  width: 100px;
+  background-color: grey;
+  display: inline-block;
+}

@@ -73,3 +73,20 @@ section {
   background-color: grey;
   display: inline-block;
 }
+.aside {
+  float: left;
+  width: 20%;
+  height: 500px;
+}
+.middle {
+  width: 5%;
+  height: 500px;
+  background-color: yellow;
+  float: left;
+  clear: left;
+}
+.news {
+  float: left;
+  width: 70%;
+  height: 500px;
+}

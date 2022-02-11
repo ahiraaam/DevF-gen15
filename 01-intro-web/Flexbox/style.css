@@ -1,7 +1,45 @@
 .padre {
+  display: flex;
+  width: 800px;
+  /*height: 800pxPropiedad para darle direccion a los 
+  hijos
+  Valores: row, column, row-reverse, column-reverse*/
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color: rgb(214, 170, 255);
 }
 .hijo {
-  width: 100px;
+  /*Los hijos también pueden ser flex*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-weight: bold;
+  box-sizing: border-box;
+  flex-basis: 100px;
   height: 100px;
-  background-color: yellowgreen;
+  border: 2px solid rgb(82, 3, 119);
+  background-color: rgb(202, 39, 243);
+}
+
+.hijo:nth-of-type(1) {
+  /*align-self: flex-end;
+  background-color: red;
+  order: 2;*/
+  flex-shrink: 1;
+}
+
+.hijo:nth-of-type(2) {
+  /*order: 3;*/
+  flex-grow: 1;
+}
+
+.hijo:nth-of-type(3) {
+  flex-grow: 1;
+}
+.hijo:nth-of-type(4) {
+  flex-grow: 3;
+  flex-basis: 200px;
 }

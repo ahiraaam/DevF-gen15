@@ -1,4 +1,4 @@
-//Solicitar al usuario su edad y validar si es o no mayor de edad 
+//Solicitar al usuario su edad y validar si es o no mayor de edad
 //mayoria de edad a 18
 
 /*
@@ -68,10 +68,16 @@ var color = "roja";
 var edad = 15;
 var vivo = true;
 
-if( color == "azul" || edad >= 18 && vivo == true)
-{
-    console.log("puedes acceder al club");
-}else
-{
-    console.log("No puedes entrar al club");
+if (color == "azul" || (edad >= 18 && vivo == true)) {
+  console.log("puedes acceder al club");
+} else if (color == "azul" || (edad >= 60 && vivo == true)) {
+  console.log("puedes acceder al club VIP");
+} else {
+  console.log("No puedes entrar al club");
+}
+
+if (color == "azul") {
+  console.log("puedes acceder al club");
+} else {
+  console.log("No puedes entrar al club");
 }

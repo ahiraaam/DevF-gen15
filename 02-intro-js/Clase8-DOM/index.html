@@ -7,11 +7,22 @@
     <title>Practica DOM</title>
     <script defer src="./main.js"></script>
 </head>
-<body>
+<body id="cuerpo">
     <h1 class="texto" id="titulo">DOM</h1>
-    <p class="texto" >Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptate autem inventore cupiditate repudiandae quo fuga possimus voluptatem, distinctio itaque at illo debitis, ipsam error eum molestiae ut labore enim incidunt.
-    Incidunt delectus sunt sequi sapiente cum assumenda placeat dolores qui minus. Incidunt aspernatur hic impedit iure accusamus, blanditiis, fugit ducimus nemo autem neque at. Dolore dolorum odit officia rerum harum.
-        <code>DomContentLoad</code>
-    </p>
+    <button onclick="screenBlanco()" >Blanco</button>
+    <button onclick="screenAzul()" >Azul</button>
+    <button onclick="screenMagenta()" >Magenta</button>
+
+    <br/>
+    <br/>
+    <br/>
+    <label for="">Numero 1:</label><input onchange="imprimirValor()" onkeyup="keyupevent()" type="number" id="a">
+    <br/>
+    <br/>
+    <label for="">Numero 2:</label><input onchange="imprimirValor()" type="number" id="b">
+    <br/>
+    <br/>
+    <label for="c"> Resultado:</label><input type="number" id="c">
+    <input type="button" onclick="sumar()" value="Resultado">
 </body>
 </html>

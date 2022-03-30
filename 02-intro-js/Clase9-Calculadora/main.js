@@ -18,7 +18,7 @@ let operacion = "";
 let numeros = document.getElementsByTagName("button");
 
 //2- Asignar el evento click
-console.log(numeros, numeros.length);
+//console.log(numeros, numeros.length);
 
 for (let i = 0; i < numeros.length; i++) {
   //console.log("Actuando sobre el boton",numeros[i].value);
@@ -76,3 +76,25 @@ function resultado()
   pantalla.value = resultado;
 
 }
+
+/** PERSISTENCIA  */
+
+/*
+let dato = 0;
+let user = {
+  nombre:"Angel",
+  saldo:500
+}
+console.log(user);
+user.saldo = 1000;
+console.log(user);
+localStorage.setItem("usuario",JSON.stringify(user));
+
+*/
+let usuario = JSON.parse( localStorage.getItem("usuario") );
+console.log(usuario);
+
+// localstorage
+
+// setItem -> guardamos datos
+// getItem -> leemos datos

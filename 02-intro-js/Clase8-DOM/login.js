@@ -10,7 +10,7 @@ function login(event) {
   console.log(username, password);
 
   if (username.value === "a@gmail.com" && password === "123") {
-    //window.location.href = "index.html";
+    window.location.href = "index.html";
     let btnLogin = document.getElementById("btn_login");
     btnLogin.disabled = true;
     username.readOnly = true;

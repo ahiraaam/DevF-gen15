@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Cuenta</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/app.css">
+</head>
+<body id="balance">
+    <header></header>
+    <main class="container-fluid mt-3 mb-3" >
+        <div class="row">
+            <div class="col-12 col-md-3">
+                <div class="card" style="width: 18rem;">
+                    <img src="https://cdn.imgbin.com/3/12/17/imgbin-computer-icons-avatar-user-login-avatar-man-wearing-blue-shirt-illustration-mJrXLG07YnZUc2bH5pGfFKUhX.jpg" class="card-img-top" alt="imagen de perfil usuario">
+                    <div class="card-body">
+                        <h5 class="card-title">Mis Datos</h5>
+                        <ul class="list-unstyled">
+                            <li>Nombre: <span id="lbl-nombre" ></span></li>
+                            <li>Apellido: <span id="lbl-apellido" ></span></li>
+                            <li>Usuario: <span id="lbl-usuario" ></span></li>
+                        </ul>
+                        <h4>Saldo: $ <span id="saldo" class="animar-saldo" ></span></h4>
+                        <div class="text-end">
+                            <button type="button" class="btn btn-danger" id="btn-logout">Cerrar sesion</button>
+                        </div>
+                    </div>
+                    <div class="card-footer text-muted text-center">
+                        Mi Banquito Mundial
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-9">
+                <div class="row">
+                    <div class="col-12">
+                        <h1>Bienvenido!!</h1>
+                        <div class="accordion" id="accordionExample">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingOne">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                        Menu
+                                    </button>
+                                </h2>
+                                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        <div class="d-flex justify-content-around">
+                                            <button class="btn btn-primary btn-lg" data-bs-toggle="modal" data-bs-target="#depositar" >Depositar</button>
+                                            <button class="btn btn-primary btn-lg" data-bs-toggle="modal" data-bs-target="#retirar" >Retirar</button>
+                                            <button class="btn btn-primary btn-lg" id="btn-consultar" >Consultar Saldo</button>
+                                            <button class="btn btn-primary btn-lg" data-bs-toggle="modal" data-bs-target="#trasferencia" >Transferir</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingOne">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                        Mis Movimientos
+                                    </button>
+                                </h2>
+                                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        <table class="table text-center">
+                                            <thead>
+                                                <tr>
+                                                    <th scope="col">#</th>
+                                                    <th scope="col">Tipo</th>
+                                                    <th scope="col">Cantidad</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody id="tableMovimientos">
+
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <div class="modal fade" id="depositar" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" >Realizar Deposito</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div id="alert" class="alert " role="alert"></div>
+                    <div class="row justify-content-center">
+                        <div class="col-12 col-md-8">
+                            <input type="number" class="form-control" id="txt-deposito">
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary" id="btn-depositar">Confirmar Deposito</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="retirar" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" >Retirar Efectivo</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div id="alert-retiro" class="alert " role="alert"></div>
+                    <div class="row justify-content-center">
+                        <div class="col-12 col-md-8">
+                            <input type="number" class="form-control" id="txt-retiro">
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary" id="btn-retirar">Confirmar Retiro</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="trasferencia" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" >Realizar Transferencia </h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div id="alert-transferencia" class="alert " role="alert"></div>
+                    <div class="row justify-content-center">
+
+                        <div class="col-12 col-md-8">
+                            <label">Seleccione una cuenta destino</label>;
+                            <select name="ddl-cuentas" id="ddl-cuentas" class="form-control">
+                                <option value="-1"> Seleccionar Cuenta </option>
+                            </select>
+                            <label">Cantidad</label>;
+                            <input type="number" class="form-control" id="txt-transferencia">
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary" id="btn-transferir">Confirmar Transferencia</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="fixed-bottom"></footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+    <script src="assets/js/balance.js" ></script>
+</body>
+</html>

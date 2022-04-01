@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/app.css">
+</head>
+<body>
+    <div class="alert alert-dismissible" role="alert" id="liveAlert">
+    </div>
+    <main class="container mt-3" >
+        <div class="row justify-content-center">
+            <div class="col-12 col-md-6 ">
+                <div id="alert" class="alert " role="alert"></div>
+                <form class="wrapper-login" action="">
+                    <div id="wraper-logo">
+                        <img src="assets/imgs/21012.png" alt="Logo Mi Banco" class="img-fluid">
+                    </div>
+                    <div id="login">
+                        <div class="mb-3">
+                            <label for="txt-user" class="form-label">Usuario:</label>
+                            <input type="email" class="form-control" name="txt-user" id="txt-user">
+                        </div>
+    
+                        <div class="mb-3">
+                            <label for="txt-pass" class="form-label">Contraseña:</label>
+                            <input type="password" class="form-control" name="txt-pass" id="txt-pass">
+                        </div>
+                        <div class="mb-3">
+                            <button type="button" class="btn btn-primary btn-lg btn-block d-block w-100" id="btn-login" >Login</button>
+                        </div>
+                        <div class="mb-3">
+                            <button type="button" class="btn btn-secondary btn-lg btn-block d-block w-100" onclick="showHideForm(true)" >Registrarse</button>
+                        </div>
+                    </div>
+                    <div id="registro">
+                        <div class="mb-3">
+                            <label for="txt-user" class="form-label">Nombre:</label>
+                            <input type="email" class="form-control" name="txt-name" id="txt-name">
+                        </div>
+                        <div class="mb-3">
+                            <label for="txt-user" class="form-label">apellido:</label>
+                            <input type="text" class="form-control" name="txt-name" id="txt-lastname">
+                        </div>
+                        <div class="mb-3">
+                            <label for="txt-user-reg" class="form-label">Usuario:</label>
+                            <input type="email" class="form-control" name="txt-user" id="txt-user-reg">
+                        </div>
+                        <div class="mb-3">
+                            <label for="txt-pass-reg class="form-label">Contraseña:</label>
+                            <input type="password" class="form-control" name="txt-pass" id="txt-pass-reg">
+                        </div>
+                        <div class="mb-3">
+                            <button type="button" class="btn btn-primary btn-lg btn-block d-block w-100" onclick="showHideForm(false)" >Login</button>
+                        </div>
+                        <div class="mb-3">
+                            <button type="button" class="btn btn-secondary btn-lg btn-block d-block w-100" id="btn-registro">Registrarse</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+    <script src="assets/js/main.js" ></script>
+</body>
+</html>

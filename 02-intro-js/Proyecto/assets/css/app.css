@@ -1,0 +1,46 @@
+body{
+    height: 100%;
+    background: #0F2027;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #2C5364, #203A43, #0F2027); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+#balance{
+    background: #FCFCFC;
+}
+
+header,footer
+{
+    background: #0F2027;
+    background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027); 
+    background: linear-gradient(to right, #2C5364, #203A43, #0F2027);
+
+    height: 40px;
+}
+
+
+
+.wrapper-login{
+    border-radius: 3%;
+    padding: 2rem;
+    background-color: white;
+}
+
+#wraper-logo{
+    border-radius: 0 50%;
+    text-align: center;
+}
+
+#wraper-logo img{
+    max-width: 90px;
+}
+
+
+.bg-login
+{
+    height: 4em;
+    margin: 3.4641em 0;
+    position: relative;
+    width: 6.9282em;
+}
